@@ -1,0 +1,31 @@
+
+header {
+  width: 30rem;
+  top: 0;
+  right: 0;
+  
+}
+
+header img {
+  height: 15rem;
+  margin-left: 5rem;
+}
+
+header img:hover {
+  scale: 1.2;
+  transition: 0.5s;
+  animation: infinite 5s;
+}
+
+@media only screen and (max-width: 950px) {
+  
+  header img {
+    margin: 0;
+    height: 30rem;   
+  }
+
+  header {
+    margin: auto; 
+  }
+}
+

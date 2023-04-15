@@ -1,0 +1,27 @@
+
+
+#projetos h1 {
+  color: #ffffff;
+  font-size: 5rem;
+  margin-top: 15rem;
+  text-align: center;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  margin-top: 10rem;
+}
+
+@media only screen and (max-width: 1070px) {
+  .project {
+    display: block;
+    text-align: center;
+  }
+  #img-proj p {
+    margin: auto;
+    font-size:clamp(.8rem, 1.2rem + 3vw, 4rem);
+  }
+
+}

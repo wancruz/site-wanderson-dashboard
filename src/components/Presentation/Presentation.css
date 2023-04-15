@@ -1,0 +1,51 @@
+
+section img {
+  width: clamp(10rem, 12rem + 55vw, 55rem);
+
+}
+section img:hover {
+  scale: 1.1;
+  transition: all 0.5s ease-in-out;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rem 15rem 5rem 10rem;
+
+}
+
+#name h1,
+h3 {
+  color: #9678d6;
+  margin-top: 0;
+}
+
+#name h1 {
+  font-size: 7rem;
+}
+#name h3 {
+  font-size: 3rem;
+}
+#name h1:hover {
+  scale: 1.2;
+  transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 938px) {
+  section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+}
+
+@media only screen and (max-width: 820px) {
+  #name h1 {
+    font-size:clamp(.8rem, 2rem + 5vw, 10rem);
+  }
+
+}
+
+

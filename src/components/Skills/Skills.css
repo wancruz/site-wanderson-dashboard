@@ -1,0 +1,50 @@
+
+
+#img-hab img:nth-child(1) {
+  grid-area: A;
+}
+
+#img-hab img:nth-child(2) {
+  grid-area: B;
+}
+
+#img-hab {
+  display: grid;
+  grid-template-areas:
+    'A  B  C'
+    'D  D  E';
+  gap: 10rem;
+  margin-top: 10rem;
+}
+#img-hab img {
+  height: clamp(10rem, 15rem + 15vw, 15rem);
+}
+
+#img-hab img:hover {
+  scale: 1.2;
+  transition: 0.5s;
+  animation: infinite 5s;
+}
+
+@media only screen and (max-width: 1070px) {
+ 
+  #img-hab img {
+    height: clamp(5rem, 5rem + 9vw, 20rem);
+  }
+  #img-hab {
+    gap: 5rem;
+    transition: 5s;
+  }
+
+}
+
+@media only screen and (max-width: 360px) {
+ 
+#img-hab {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+}

@@ -1,0 +1,43 @@
+
+
+p {
+  color: #a4a4a4;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-left: clamp(2rem, 3rem + 15vw, 15rem);
+}
+
+#sbcont {
+  display: flex;
+  align-items: center;
+  padding: auto;
+}
+
+#sbcont p {
+  font-size: 2rem;
+  width: clamp(8rem, 10rem + 50vw, 55rem);
+
+  letter-spacing: 0.1rem;
+}
+
+@media only screen and (max-width: 1070px) {
+ 
+  #sbcont {
+   display: flex;
+   flex-direction: column;
+   justify-self: center;
+   
+  }
+  #sbcont p {
+   margin: 0;
+   margin-bottom: 2rem;
+  }
+
+
+  #sbcont img {
+    margin-bottom: 8rem;
+    margin-top: 10rem;
+    justify-items: center;
+    height: 40rem;
+  }
+}

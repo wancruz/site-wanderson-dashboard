@@ -1,0 +1,53 @@
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15rem;
+  margin-top: -8rem;
+  gap: 4rem;
+}
+nav li {
+  font-size: 2.2rem;
+  list-style: none;
+  color: #cfccd4;
+}
+
+li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+li a:hover {
+  scale: 1.2;
+  transition: 0.5s;
+  animation: infinite 5s;
+  color: #9678d6;
+}
+
+
+@media only screen and (max-width: 950px) {
+  nav {
+   margin: 0;
+   justify-content: center;
+   gap:3rem;
+  }
+
+  nav li a {
+    font-size: clamp(.8rem, 1rem + 4vw, 2.3rem);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  nav {
+   gap:3rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   
+  }
+
+  nav li a {
+    font-size: 3rem;
+  }
+}
+
