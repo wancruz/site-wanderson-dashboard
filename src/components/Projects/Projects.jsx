@@ -4,7 +4,7 @@ import "./Projects.css";
 
 import newProject from "./Projects.json";
 
-import ItensProjects from '../ItensProjects/ItensProjects';
+import ItemsProjects from '../ItemsProjects/ItemsProjects';
 
 
 function Projects() {
@@ -17,12 +17,12 @@ function Projects() {
 
         <div className="project">
           {newProject.map((item,index) => 
-            <ItensProjects
+            <ItemsProjects
              key ={index} 
              link ={item.link}
              image ={item.image + (index + 1)}
              title ={item.title + (index + 1)}
-            ></ItensProjects>
+            ></ItemsProjects>
           )}
         </div>
       </div>
@@ -30,4 +30,4 @@ function Projects() {
   )
 }
 
-export default Projects
+export default Projects;

@@ -1,7 +1,7 @@
 import React from 'react';
-import './ItensProjects.css';
+import './ItemsProjects.css';
 
-function ItensProjects(props) {
+function ItemsProjects(props) {
   return (
     <div id="img-proj">
       <a href={props.link} target='_blank'>
@@ -12,4 +12,4 @@ function ItensProjects(props) {
   )
 }
 
-export default ItensProjects;
+export default ItemsProjects;
