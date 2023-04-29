@@ -1,4 +1,17 @@
 
+p {
+  color: white;
+  margin: auto;
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 40%;
+}
+
+
+#img-hab {
+  display: flex;
+  flex-direction: column;
+}
 
 #img-hab img:nth-child(1) {
   grid-area: A;
