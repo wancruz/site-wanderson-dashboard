@@ -8,8 +8,8 @@
 }
 
 #img-proj img:hover {
-  border: solid #9678d6 5px;
-  transition: all 200ms;
+  outline: solid #9678d6 5px;
+  transition: all 0.3ms ease-in-out;
   filter: brightness(60%);
 }
 

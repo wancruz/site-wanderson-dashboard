@@ -30,10 +30,9 @@ function App() {
 
       const infoSkillExpert = await api.get('/infoSkill?tipo=profissional')
       const infoSkillAprimorando = await api.get('/infoSkill?tipo=aprimorando')
-  
-      const infoSkill = await api.get('/infoSkill');
-      setInfoSkill(infoSkill.data
-      )
+
+      const infoSkill = await api.get('/infoSkill')
+      setInfoSkill(infoSkill.data)
 
       const infoProject = await api.get('/infoProject')
       setInfoProject(infoProject.data)
@@ -54,7 +53,10 @@ function App() {
         <Routes>
           <Route index element={<Presentation />} />
           <Route path="sobre" element={<About infoAbout={infoAbout} />} />
-          <Route path="habilidades" element={<Skills infoSkill={infoSkill} />} />
+          <Route
+            path="habilidades"
+            element={<Skills infoSkill={infoSkill} />}
+          />
           <Route path="projetos" element={<Projects />} />
           <Route path="contato" element={<Contact />} />
         </Routes>
