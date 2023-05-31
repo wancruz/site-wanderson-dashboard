@@ -22,27 +22,27 @@ function App() {
 
   const fetchDados = async () => {
     try {
-      const infoAbout = await api.get('/infoAbout/1')
+      const infoAbout = await api.get('/sobre/1')
       setInfoAbout({
         foto: infoAbout.data.foto,
         resumo: infoAbout.data.resumo
       })
 
-      const infoSkillExpert = await api.get('/infoSkill?tipo=profissional')
-      const infoSkillAprimorando = await api.get('/infoSkill?tipo=aprimorando')
+      const infoSkillExpert = await api.get('/habilidades?tipo=profissional')
+      const infoSkillAprimorando = await api.get('/habilidades?tipo=aprimorando')
 
-      const infoSkill = await api.get('/infoSkill')
-      setInfoSkill(infoSkill.data)
+      const infoSkill = await api.get('/habilidades')
+      setInfoSkill(infoSkill.data);
 
-      const infoProject = await api.get('/infoProject')
-      setInfoProject(infoProject.data)
+      const infoProject = await api.get('/projetos')
+      setInfoProject(infoProject.data);
     } catch (error) {
       console.log('Erro ao buscar dados', error)
     }
   }
   React.useEffect(() => {
     fetchDados()
-  }, [])
+  }, []);
 
   return (
     <>
@@ -57,7 +57,7 @@ function App() {
             path="habilidades"
             element={<Skills infoSkill={infoSkill} />}
           />
-          <Route path="projetos" element={<Projects />} />
+          <Route path="projetos" element={<Projects infoProject={infoProject} />} />
           <Route path="contato" element={<Contact />} />
         </Routes>
       </BrowserRouter>

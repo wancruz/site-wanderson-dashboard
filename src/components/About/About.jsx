@@ -1,6 +1,5 @@
 import React from 'react'
 import './About.css'
-import data from './about.json'
 import figWan from '../../images/pixlr-bg-result (1).png'
 
 function About(props) {

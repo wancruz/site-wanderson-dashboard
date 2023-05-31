@@ -2,12 +2,11 @@ import React from 'react';
 
 import "./Projects.css";
 
-import newProject from "./Projects.json";
 
 import ItemsProjects from '../ItemsProjects/ItemsProjects';
 
 
-function Projects() {
+function Projects({infoProject}) {
   
   return (
     <>
@@ -16,7 +15,7 @@ function Projects() {
         <h1>Projetos</h1>
 
         <div className="project">
-          {newProject.map((item,index) => 
+          {infoProject.map((item,index) => 
             <ItemsProjects
              key ={index} 
              link ={item.link}
