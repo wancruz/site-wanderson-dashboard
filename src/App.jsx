@@ -22,7 +22,7 @@ function App() {
 
   const fetchDados = async () => {
     try {
-      const infoAbout = await api.get('/sobre/1')
+      const infoAbout = await api.get('/infoAbout/1')
       setInfoAbout({
         foto: infoAbout.data.foto,
         resumo: infoAbout.data.resumo
